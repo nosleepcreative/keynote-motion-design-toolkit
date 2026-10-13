@@ -1,0 +1,4 @@
+# Keep macOS Quick Action bundles and After Effects presets byte-for-byte
+*.wflow binary
+*.plist binary
+*.aom   binary
