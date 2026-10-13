@@ -1,5 +1,6 @@
 # Project files, AE collect reports and render output
 *.aep
+!02_AfterEffects/01_AEP/*.aep
 *Report.txt
 RENDERS/
 
