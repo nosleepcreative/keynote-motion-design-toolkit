@@ -58,7 +58,7 @@ After Effects render presets, a codec guide and macOS Quick Actions for motion d
 If you are working with a team, set up one shared copy so everyone has the presets, project template and Quick Actions they need in one place:
 
 1. Download this repo to your shared folder or drive so your teammates can use it.
-2. Download the [NotchLC plugin](https://notchlc.notch.one/) (see `01_Plugins`) and install it.
+2. Download the [NotchLC plugin](https://notchlc.notch.one/) (see `01_Plugins`), upload to the folder for your team, and install it as well.
 3. Use the After Effects project template (`.aep`) provided, or replace it with your team's own template.
 4. Make any necessary changes to fit your workflow.
 5. Share this repo or the GIFs in `docs/gifs` with your team, so everyone knows how to install and use the tools.
@@ -93,7 +93,7 @@ The Setting menu also lists H.264 (480p to 2160p), HEVC (1080p, 2160p, 4320p), M
 
 ### Install the Quick Actions on a Mac
 
-> **Note:** so team members can align on encoding settings without having to memorize them or risk using the wrong ones, these Quick Actions apply the agreed HEVC settings with a single right-click.
+> **Note:** For team members to align on encoding settings without having to memorize them or risk using the wrong ones, these Quick Actions apply the agreed HEVC settings with a single right-click.
 
 ![Install Quick Actions](docs/gifs/HowTo_Install_QuickActions.gif)
 
