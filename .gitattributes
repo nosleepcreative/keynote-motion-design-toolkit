@@ -2,3 +2,4 @@
 *.wflow binary
 *.plist binary
 *.aom   binary
+*.ffx   binary
