@@ -9,6 +9,9 @@ After Effects render presets, a codec guide and macOS Quick Actions for motion d
 | `01_Plugins` | Link to download the free NotchLC plugin for Adobe (macOS and Windows) |
 | `02_AfterEffects/01_AEP` | Where your team's After Effects project template (`.aep`) goes |
 | `02_AfterEffects/02_RenderPresets` | Output module presets (`.aom`) for ProRes and NotchLC |
+| `02_AfterEffects/03_RenderArray` | Render Array, a dockable script (`.jsx`) that queues a comp as several render items: split by markers, head and tail, or one PNG per marker |
+| `02_AfterEffects/04_TimeArray` | Time Array, a preset (`.ffx`) that remaps a layer's Time Remap so it triggers from markers in the comp |
+| `02_AfterEffects/05_TypeArray` | Link to download Paul Slemmer's Type Array text animation preset |
 | `03_macOS/QuickActions` | macOS Quick Actions: Convert to HEVC 4k, with and without alpha |
 | `docs` | `gifs/` and `images/` used in this README and the onboarding deck |
 
@@ -79,6 +82,21 @@ After loading, each template should match these Output Module Settings. The red 
 
 ![Output Module Settings: MOV - 422 HQ + Audio, MOV - 4444 + Alpha + Sound, NotchLC, NotchLC (with alpha)](docs/images/Output_Module_Settings_Row.png)
 
+### Install Render Array in After Effects
+
+1. Copy `Render Array v1.0.jsx` from `02_AfterEffects/03_RenderArray` into After Effects' `Scripts/ScriptUI Panels` folder.
+2. Restart After Effects, then open **Render Array** from the **Window** menu and dock it.
+3. Pick a mode, check the Segments preview, and click **Queue**. Items are only added to the Render Queue. Nothing renders until you start it.
+
+To try it without installing, use **File > Scripts > Run Script File...** and it opens as a floating panel. Markers whose comment starts with `!` are listed as alerts and skipped.
+
+### Apply the Time Array and Type Array presets
+
+1. Select the layer: any layer for Time Array, a text layer for Type Array.
+2. Choose **Animation > Apply Animation Preset...** and pick the `.ffx` file.
+
+Type Array is not stored here. Download it from the link in `02_AfterEffects/05_TypeArray` first.
+
 ### Encode HEVC manually on a Mac
 
 ![Encode HEVC manually](docs/gifs/HowTo_Encode_HEVC_Manually.gif)
@@ -113,13 +131,6 @@ The Setting menu also lists H.264 (480p to 2160p), HEVC (1080p, 2160p, 4320p), M
 
 Made by Desmond Du. More work at [duitbetter.com](https://duitbetter.com).
 
-## Roadmap
-
-Planned improvements, not available yet:
-
-- **TimeArray:** an After Effects preset (`.ffx`) that remaps a layer's Time Remap property so it triggers based on markers in the comp.
-- **RenderArray:** an After Effects preset (`.ffx`) for rendering each segment of a comp.
-
 ## License
 
-[MIT](LICENSE). Third-party software linked from this repo, such as the NotchLC plugin, is not covered by this license and remains under its own terms.
+[MIT](LICENSE). Third-party software linked from this repo, such as the NotchLC plugin and Type Array, is not covered by this license and remains under its own terms.
