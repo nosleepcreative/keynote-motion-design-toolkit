@@ -10,7 +10,7 @@ After Effects render presets, a codec guide and macOS Quick Actions for motion d
 | `02_AfterEffects/01_AEP` | Where your team's After Effects project template (`.aep`) goes |
 | `02_AfterEffects/02_RenderPresets` | Output module presets (`.aom`) for ProRes and NotchLC |
 | `02_AfterEffects/03_RenderArray` | Render Array, a dockable script (`.jsx`) that queues a comp as several render items: split by markers, head and tail, or one PNG per marker |
-| `02_AfterEffects/04_TimeArray` | Time Array, a preset (`.ffx`) that remaps a layer's Time Remap so it triggers from markers in the comp |
+| `02_AfterEffects/04_TimeArray` | Time Array, a preset (`.ffx`) that remaps a layer's Time Remap so it triggers from markers in the comp, plus a zipped demo project |
 | `02_AfterEffects/05_TypeArray` | Link to download Paul Slemmer's Type Array text animation preset |
 | `03_macOS/QuickActions` | macOS Quick Actions: Convert to HEVC 4k, with and without alpha |
 | `docs` | `gifs/` and `images/` used in this README and the onboarding deck |
@@ -96,6 +96,8 @@ To try it without installing, use **File > Scripts > Run Script File...** and it
 2. Choose **Animation > Apply Animation Preset...** and pick the `.ffx` file.
 
 Type Array is not stored here. Download it from the link in `02_AfterEffects/05_TypeArray` first.
+
+To see Time Array set up, unzip `TimeArray_Trigger_Demo.aep.zip` in `02_AfterEffects/04_TimeArray` and open the project.
 
 ### Encode HEVC manually on a Mac
 
