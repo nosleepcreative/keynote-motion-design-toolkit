@@ -82,23 +82,6 @@ After loading, each template should match these Output Module Settings. The red 
 
 ![Output Module Settings: MOV - 422 HQ + Audio, MOV - 4444 + Alpha + Sound, NotchLC, NotchLC (with alpha)](docs/images/Output_Module_Settings_Row.png)
 
-### Install Render Array in After Effects
-
-1. Copy `Render Array v1.0.jsx` from `02_AfterEffects/03_RenderArray` into After Effects' `Scripts/ScriptUI Panels` folder.
-2. Restart After Effects, then open **Render Array** from the **Window** menu and dock it.
-3. Pick a mode, check the Segments preview, and click **Queue**. Items are only added to the Render Queue. Nothing renders until you start it.
-
-To try it without installing, use **File > Scripts > Run Script File...** and it opens as a floating panel. Markers whose comment starts with `!` are listed as alerts and skipped.
-
-### Apply the Time Array and Type Array presets
-
-1. Select the layer: any layer for Time Array, a text layer for Type Array.
-2. Choose **Animation > Apply Animation Preset...** and pick the `.ffx` file.
-
-Type Array is not stored here. Download it from the link in `02_AfterEffects/05_TypeArray` first.
-
-To see Time Array set up, unzip `TimeArray_Trigger_Demo.aep.zip` in `02_AfterEffects/04_TimeArray` and open the project.
-
 ### Encode HEVC manually on a Mac
 
 ![Encode HEVC manually](docs/gifs/HowTo_Encode_HEVC_Manually.gif)
@@ -128,6 +111,23 @@ The Setting menu also lists H.264 (480p to 2160p), HEVC (1080p, 2160p, 4320p), M
 1. In Finder, right-click the master file and choose **Quick Actions**.
 2. Choose **Convert to HEVC 4k**, or **Convert to HEVC 4k with Alpha** if the background must stay transparent.
 3. The converted file appears next to the master, named `<name>_HEVC.mov`.
+
+### Install Render Array in After Effects
+
+1. Copy `Render Array v1.0.jsx` from `02_AfterEffects/03_RenderArray` into After Effects' `Scripts/ScriptUI Panels` folder.
+2. Restart After Effects, then open **Render Array** from the **Window** menu and dock it.
+3. Pick a mode, check the Segments preview, and click **Queue**. Items are only added to the Render Queue. Nothing renders until you start it.
+
+To try it without installing, use **File > Scripts > Run Script File...** and it opens as a floating panel. Markers whose comment starts with `!` are listed as alerts and skipped.
+
+### Apply the Time Array and Type Array presets
+
+1. Select the layer: any layer for Time Array, a text layer for Type Array.
+2. Choose **Animation > Apply Animation Preset...** and pick the `.ffx` file.
+
+Type Array is not stored here. Download it from the link in `02_AfterEffects/05_TypeArray` first.
+
+To see Time Array set up, unzip `TimeArray_Trigger_Demo.aep.zip` in `02_AfterEffects/04_TimeArray` and open the project.
 
 ## Author
 
